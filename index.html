@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>セレナ値引き額の相場</title>
+
+<link rel='stylesheet' href='./style.css' type='text/css' />
+
+<body>
+  <div id="contents" style="width:60%">
+    <div class="cps-post-main h2-style01 h3-style01 h4-style01 entry-content" itemprop="articleBody">
+
+
+      <form action="#" name="form1">
+        <h2>日産セレナの値引き合格ラインをチェック！</h2>
+
+
+        <p>日産セレナの値引き<span class="marker2"><strong>合格ラインは選択したグレードやオプションによって違います。</strong></span>見積などの条件を入力して合格ラインをチェックしてみてください。</p>
+        <table style="width: 100%;" border="0">
+          <tbody>
+            <tr>
+              <td style="width: 99.4078%; text-align: left;" colspan="2" align="right"><strong>グレードを選択&gt;&gt;<br />
+                </strong><select name="goods1" onchange="keisan()">
+                  <option value="2997500">ｅ－パワー Ｘ</option>
+                  <option value="3226300">ｅ－パワー ＸＶ</option>
+                  <option value="3293400">ｅ－パワー ハイウェイスター</option>
+                  <option value="3473800">ｅ－パワー Ｇ</option>
+                  <option value="3499100">ｅ－パワー ハイウェイスターＶ</option>
+                  <option value="3725700">ｅ－パワー ハイウェイスターＧ</option>
+                  <option value="2576200">Ｘ</option>
+                  <option value="2736800">ＸＶ</option>
+                  <option value="2758800">ハイウェイスター</option>
+                  <option value="2986500">ハイウェイスターＶ</option>
+                  <option value="3061300">Ｇ</option>
+                  <option value="3227400">ハイウェイスターＧ</option>
+                  <option value="3773000">ｅ－パワー オーテック Ｖパッケージ</option>
+                  <option value="3927000">ｅ－パワー オーテック セーフティパッケージ</option>
+                  <option value="3236200">オーテック Ｖパッケージ</option>
+                  <option value="3390200">オーテック セーフティパッケージ</option>
+                  <option value="3560700">オーテック スポーツスペック</option>
+                  <option value="3665200">ｅ－パワー ハイウェイスターＶ アーバンクロム</option>
+                  <option value="3125100">ハイウェイスターＶ アーバンクロム</option>
+                  <option value="3403400">ｅ－パワー ＸＶ エアロ</option>
+                  <option value="2893000">ＸＶ エアロ</option>
+                  <option value="2824800">Ｘ ４WD</option>
+                  <option value="2985400">ＸＶ ４WD</option>
+                  <option value="3051400">ハイウェイスター ４WD</option>
+                  <option value="3251600">ハイウェイスターＶ４WD</option>
+                  <option value="3353900">Ｇ４WD</option>
+                  <option value="3484800">オーテック Ｖパッケージ４WD</option>
+                  <option value="3594800">オーテック セーフティパッケージ４WD</option>
+                  <option value="3141600">ＸＶ エアロ４WD</option>
+                </select></td>
+            </tr>
+            <tr>
+              <td style="width: 42.8934%;" align="right"><strong>本体価格</strong></td>
+              <td style="width: 56.5144%;"><input disabled="disabled" name="field1" size="8" type="text" value="0" /> 円</td>
+            </tr>
+            <tr>
+              <td style="width: 42.8934%;" align="right"><strong>オプション価格*<br />
+                </strong></td>
+              <td style="width: 56.5144%;"><input id="option" name="field2" size="8" type="text" value="300000" /> 円</td>
+            </tr>
+            <tr>
+              <td style="width: 42.8934%; text-align: right;"><strong>値引き交渉</strong></td>
+              <td style="width: 56.5144%;"><input id="r1" checked="checked" name="field3" type="radio" value="0.8" /> 一般的な交渉<br />
+                <input id="r2" name="field3" type="radio" value="1" /> <span style="color: #ff0000;">限界まで交渉</span><br />
+                <input id="r3" name="field3" type="radio" value="0.2" /> 交渉しない</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>＊オプション価格にはディーラーオプションと付属品の合計を入力してください。メーカーオプションは含めません。</p>
+        <p style="text-align: center;"><span style="font-size: 14pt;">▼</span><br />
+          <span style="font-size: 14pt;">▼</span></p>
+        <table style="width: 100%;">
+          <caption><span class="marker2"><strong>↓値引きの合格ライン↓</strong></span></caption>
+          <tbody>
+            <tr>
+              <td style="width: 56.8528%;" align="right"><strong>①本体値引き</strong></td>
+              <td style="width: 42.555%;"><strong><span id="nebiki_hon" style="color: #ff0000;">円</span></strong></td>
+            </tr>
+            <tr>
+              <td style="width: 56.8528%;" align="right"><strong>②オプション値引き</strong></td>
+              <td style="width: 42.555%;"><strong><span id="nebiki_op" style="color: #ff0000;">円</span></strong></td>
+            </tr>
+            <tr>
+              <td style="width: 56.8528%;" align="right"><strong>③値引き合計(①＋②)</strong></td>
+              <td style="width: 42.555%;"><strong><span id="nebiki_kei" style="color: #ff0000;">円</span></strong></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- <p><strong><span id="nebiki_coment" style="background-color: #999999; color: #ffffff;">※条件で「限界まで交渉」を選択すると合格ラインがさらにアップします</span></strong></p> -->
+        <p><span id="nebiki_coment">※条件で「限界まで交渉」を選択すると合格ラインがさらにアップします</span></p>
+        <p style="text-align: center;"><span style="font-size: 14pt;"><span class="marker"><strong>下取り車の査定アップ交渉もすると…</strong></span><br />
+            ▼</span><br />
+          <span style="font-size: 14pt;">▼</span></p>
+        <table style="width: 100%;">
+          <caption><span class="marker2"><strong>↓最大値引き額↓</strong></span></caption>
+          <tbody>
+            <tr>
+              <td style="width: 56.7682%;" align="right"><strong>④下取り価格UP!</strong></td>
+              <td style="width: 42.6396%;"><strong><span id="shitadori" style="color: #ff0000;">円</span></strong></td>
+            </tr>
+            <tr>
+              <td style="width: 56.7682%;" align="right"><strong>③値引き合計</strong></td>
+              <td style="width: 42.6396%;"><strong><span id="nebiki_kei_2">円</span></strong></td>
+            </tr>
+            <tr>
+              <td style="width: 56.7682%;" align="right"><strong><span style="color: #ff0000;">限界値引き</span>(③+④)</strong></td>
+              <td style="width: 42.6396%;"><strong><span id="nebiki_kei_3" style="color: #ff0000;">円</span></strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </form>
+
+
+    </div></div>
+
+
+
+
+    <script>
+      window.onload = function() {
+        function func1() {
+          keisan();
+        }
+        document.getElementById('option').onchange = func1;
+        document.getElementById('r1').onchange = func1;
+        document.getElementById('r2').onchange = func1;
+        document.getElementById('r3').onchange = func1;
+        keisan();
+      }
+
+      function keisan() {
+        var keisu = document.form1.field3.value;
+        var nebiki_ritsu = 0.1262;
+        var nebiki_soba = 400000;
+        var price1 = document.form1.goods1.value * 1;
+        document.form1.field1.value = price1;
+        var price2 = document.getElementById('option').value * 1;
+        var nebiki1 = price1 * nebiki_ritsu * keisu;
+        if (nebiki_soba < nebiki1) {
+          nebiki1 = nebiki_soba;
+        }
+        nebiki1 = Math.round(nebiki1 / 10000) * 10000;
+        document.getElementById('nebiki_hon').innerHTML = nebiki1.toLocaleString() + '円';
+        var nebiki2 = price2 * 0.2 * keisu;
+        document.getElementById('nebiki_op').innerHTML = nebiki2.toLocaleString() + '円';
+        var nebiki3 = nebiki1 + nebiki2;
+        document.getElementById('nebiki_kei').innerHTML = nebiki3.toLocaleString() + '円';
+        document.getElementById('nebiki_kei_2').innerHTML = nebiki3.toLocaleString() + '円';
+        if (keisu < 1) {
+          keisu = 0;
+        }
+        var shitadori = 200000;
+        document.getElementById('shitadori').innerHTML = shitadori.toLocaleString() + '円';
+        var nebiki4 = nebiki1 + nebiki2 + shitadori;
+        document.getElementById('nebiki_kei_3').innerHTML = nebiki4.toLocaleString() + '円';
+        if (keisu != 1) {
+          document.getElementById('nebiki_coment').innerHTML = '※条件で「限界まで交渉」を選択すると合格ラインがアップします';
+        } else {
+          document.getElementById('nebiki_coment').innerHTML = '※限界まで値引き交渉した場合';
+        }
+      }
+    </script>
+
+</body>
+
+</html>

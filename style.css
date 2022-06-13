@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/* コンテンツエリア */
+/* #contents { padding-top: 10px; margin: 0 auto; } */
+#contents { margin: 0 auto; }
+@media (max-width: 767px) { #contents { padding-top: 0; margin-top: 0px; } }
+@media (min-width: 768px) { #contents { width: 100%; margin-top: 20px; margin-bottom: 10px; } }
+@media (min-width: 835px) and (max-width: 1199px) { #contents { width: 100%; } }
+@media (min-width: 1200px) { #contents { width: 1200px; } }
+@media (max-width: 767px) { #main-contents-one { width: calc(100% - 30px); float: left; margin-left: 15px; margin-bottom: 15px; margin-top: 10px; } }
+@media (min-width: 768px) { #main-contents-one { width: calc(100% - 60px); float: left; margin-left: 30px; } }
+@media (max-width: 767px) { #main-contents { width: calc(100% - 30px); float: left; margin-left: 15px; margin-bottom: 15px; margin-top: 10px; } }
+@media (min-width: 768px) { #main-contents { width: calc(66.66667% - 16.66667px); float: left; margin-left: 10px; } }
+@media (min-width: 1024px) { #main-contents { width: calc(67.5% - 50.25px); float: left; margin-left: 30px; margin-bottom: 0; } }
+
+
+/* コンテンツエリア */
+.cps-post-main table { margin-bottom: 20px; width: 100%; border: 1px solid #ccc; border-collapse: collapse; max-width: 100% !important; word-break: break-all; }
+.cps-post-main table tr td, .cps-post-main table tr th { padding: 8px; border: 1px solid #ccc; vertical-align: middle; }
